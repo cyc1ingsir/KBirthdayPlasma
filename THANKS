@@ -1,0 +1,26 @@
+Many thanks go to 
+
+Jan Hambrecht for creating the KDE3 kicker applet KBrithday which 
+inspired me to create this plasmoid. 
+
+To create my first plasmoid I used the turorials from KDE techbase
+especially the ones "Getting Started With Plasmoids" and 
+"Writing A DataEngine" from ?.
+
+Further hints on how to create a data engine and distribute an engine
+toghether with an applet I got by looking at the todo list plasmoid 
+from Javier Goday.
+
+I found reading the source of the stock quote plasmoid from Ryan Winter
+quite useful too.
+
+To convert it to a popup applet I used lots of hints from the device
+notifier plasmoid by Alexis Ménard (?).
+
+Thanks alot to Alain Protal for providing the French translation as well
+for fixing quite a few bugs.
+
+Many thanks to all of you for providing your work open source.
+
+Thanks to all reporting bugs and providing patches.
+

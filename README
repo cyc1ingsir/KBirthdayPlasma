@@ -1,0 +1,45 @@
+This plasmoid was inspired by the KBirthday kicker
+applet for KDE3, I've been using for years now.
+Making a slow transition to KDE4 now, that was something
+I was missing.
+It reminds you at the birthdays and anniversaries of your
+loved ones (in advance).
+
+To install:
+
+make sure, you have the following packages installed:
+    -kde4pimlibs-devel
+    -libqt4-devel
+    -libkde4-devel
+    -cmake
+*Note: The names of the packages are take from openSUSE.
+       They might differ from the package names in
+       your distribution.
+
+Unpack the archive and cd into the directory created.
+Then issue the following command on the command line:
+
+=====================================================
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` ../
+make 
+sudo make install
+=====================================================
+
+If no 'kde4-config' exists on your installation, try
+'kde-config' instead. If that fails as well, try to 
+locate the installation path of your KDE4. If e.g. 
+KDE4 is installed in /usr/kde4, replace the above command
+with 
+    cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+
+You might have to issue
+  kdequitapp plasma
+  plasma
+in order to add the plasmoid to the list of available plasmoids
+
+The addressbook.vcf file provided is containing test users.
+It's quite useful to add them to KAddressbook of a seperate
+account if one wants to test the applet. It contains quite a
+few test cases around year change
+

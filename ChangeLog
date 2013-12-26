@@ -1,0 +1,38 @@
+20100111
+        -============= V 0.9.73 ==================
+        -French translation added (Alain Portal)
+        -fixing a couple of misspellings
+        -applied patches provided by Alain Portal
+20090306
+        -============= V 0.9.72 ==================
+        -I18N files added
+        -added German language file
+20090303
+        -============= V 0.9.71 ==================
+        -applied openSUSE patches
+        -adapted cmake build files to KDE 4.2 final
+        -crash when started in hour after midnight - FIXED
+20081223
+        -============= V 0.9.70 ==================
+        -I18N_ARGUMENT_MISSING  FIXED by Patch from Tumsa on KDE-Looks org
+        -Since the ToolTip interface changed from KDE 4.1 to 4.2 this version depends on 4.2
+        -Extended panel support - this is not final yet!
+20081026
+        -============= V 0.8.0 ==================
+        -if added to a panel instead of the desktop, number of events will be shown
+        -added tooltip if added to panel (tooltip has yet to be extended)
+         tooltip interface keeps chaning - KDE >4.1.70 supported only at the moment
+        -coming events in next year and past in events in last year were not displayed (FIXED)
+        -count of coming events are calculated in order to resize plasmoid 
+         /resizing itself not working yet/
+        -Added Icon	
+20081023
+        -============= V 0.7.1 ==================
+        -updates on midnight
+        -sorting list of events - closest events first
+        -using the font colour for headings (just a bit darker)
+        -Settings now stored when the config dialog is closed
+20081021  
+        -============= V 0.7 ==================
+        -initial Release
+

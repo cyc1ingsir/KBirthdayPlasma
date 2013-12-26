@@ -1,0 +1,12 @@
+Adjust size according to length of names and the count of events listed.
+Switching to the KABC interface akonadi?
+Opening the corrosponding entry in KAddressbock?
+How to I18N a plasmoid?
+Filter events on categories (Only show events for friends, ... )
+Different display when added to a panel rather to the desktop
+    Show number of events due (done)
+    Show a meaningful tooltip (partly done)
+    what happens when plasmoid is moved from desktop to panel? (constraints event)
+Debug view displayed in the popup
+Make dialog popup only when applet is living in a panel
+
