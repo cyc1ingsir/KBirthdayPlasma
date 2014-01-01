@@ -109,6 +109,15 @@ void KBirthdayApplet::popupEvent(bool show)
 
 void KBirthdayApplet::init()
 {
+    KConfigGroup configGroup = config();
+    m_colour      = configGroup.readEntry("Color",                QColor(Qt::white));
+    m_past_colour = configGroup.readEntry("Past Color",           QColor(150,150,150));
+    m_highlight_colour = configGroup.readEntry("Highlight Color", QColor(170,0,0));
+    m_highlightTreshold = configGroup.readEntry("Highlight Treshold", 2);
+    m_eventTreshold = configGroup.readEntry("Event Treshold",       30);
+    m_pastTreshold = configGroup.readEntry("Past Treshold",           2);
+    m_showAnniversaries = configGroup.readEntry("Show Anniversaries", true);
+
     m_pKabcEngine = dataEngine("kabc");
     if (m_pKabcEngine) {
         m_pKabcEngine->connectSource(BIRTHDAY_SOURCE, this);
@@ -130,15 +139,6 @@ void KBirthdayApplet::init()
         kDebug() << "Could not load Akonadi dataEngine";
        // setFailedToLaunch(true, "Could not load kabc dataEngine");
     }
-    
-    KConfigGroup configGroup = config();
-    m_colour      = configGroup.readEntry("Color",                QColor(Qt::white));
-    m_past_colour = configGroup.readEntry("Past Color",           QColor(150,150,150));
-    m_highlight_colour = configGroup.readEntry("Highlight Color", QColor(170,0,0));
-    m_highlightTreshold = configGroup.readEntry("Highlight Treshold", 2);
-    m_eventTreshold = configGroup.readEntry("Event Treshold",       30);
-    m_pastTreshold = configGroup.readEntry("Past Treshold",           2);
-    m_showAnniversaries = configGroup.readEntry("Show Anniversaries", true);
 
     m_svg = new Plasma::Svg(this);
     m_svg->setImagePath("widgets/birthdaycake");
